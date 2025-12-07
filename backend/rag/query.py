@@ -3,27 +3,25 @@ import requests
 from qdrant_client import QdrantClient
 from dotenv import load_dotenv
 
+from .embedder import get_embedding # Import get_embedding from embedder.py
+
 load_dotenv()
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+# GEMINI_API_KEY = os.getenv("GEMINI_API_KEY") # No longer needed here as embedder handles it
 QDRANT_URL = os.getenv("QDRANT_URL")
 
 client = QdrantClient(url=QDRANT_URL)
 
-def get_embedding(text: str):
-    url = "https://api.gemini.com/v1/embeddings"
-    headers = {"Authorization": f"Bearer {GEMINI_API_KEY}"}
-    payload = {"model": "gemini-embeddings-small", "input": text}
-    resp = requests.post(url, json=payload, headers=headers)
-    return resp.json()["data"][0]["embedding"]
+# Removed local get_embedding definition
 
 def get_gemini_answer(prompt: str):
     url = "https://api.gemini.com/v1/chat/completions"
-    headers = {"Authorization": f"Bearer {GEMINI_API_KEY}"}
+    headers = {"Authorization": f"Bearer {os.getenv('GEMINI_API_KEY')}"} # Use os.getenv directly here
     payload = {
         "model": "gemini-4o",
         "messages": [{"role": "user", "content": prompt}]
     }
     resp = requests.post(url, json=payload, headers=headers)
+    resp.raise_for_status() # Raise an exception for HTTP errors
     return resp.json()["choices"][0]["message"]["content"]
 
 def query_book(question: str, top_k: int = 3) -> str:

@@ -1,0 +1,330 @@
+milestones:
+  - id: M1
+    name: Repo Structure + Environment Setup
+    objective: Establish project repository, set up development environments, and basic Docusaurus/FastAPI scaffolding.
+    tasks:
+      - id: 1.1
+        name: Initialize project repository and establish basic directory structure
+        objective: Initialize project repository and establish basic directory structure (backend/, frontend/, specs/, history/).
+        inputs: ["Project overview from `spec.md`"]
+        outputs: ["Initialized Git repository", "Empty project directories"]
+        dependencies: []
+        acceptance_criteria: ["Repository is set up, `CLAUDE.md` and `spec.md` are in place."]
+        status: completed
+      - id: 1.2
+        name: Set up Docusaurus frontend project
+        objective: Set up Docusaurus frontend project.
+        inputs: ["`spec.md` (FR-001)"]
+        outputs: ["`frontend/my-book/` with Docusaurus boilerplate"]
+        dependencies: []
+        acceptance_criteria: ["`npm start` runs a basic Docusaurus site."]
+        status: completed
+      - id: 1.3
+        name: Set up FastAPI backend project
+        objective: Set up FastAPI backend project.
+        inputs: ["`spec.md` (FR-005)"]
+        outputs: ["`backend/` with FastAPI boilerplate"]
+        dependencies: []
+        acceptance_criteria: ["`python -m uvicorn backend.main:app --reload` runs a basic FastAPI server."]
+        status: completed
+      - id: 1.4
+        name: Configure .env for Qdrant and LLM API keys (placeholders)
+        objective: Configure `.env` for Qdrant and LLM API keys (placeholders).
+        inputs: ["`CLAUDE.md` (Important Notes)"]
+        outputs: ["`.env` file with placeholder API keys"]
+        dependencies: []
+        acceptance_criteria: ["`.env` file exists and is correctly structured."]
+        status: completed
+  - id: M2
+    name: Auth (Better-Auth) + Post-signup Survey
+    objective: Implement user authentication with Better-Auth and integrate the mandatory background survey.
+    tasks:
+      - id: 2.1
+        name: Integrate Better-Auth library into FastAPI backend for signup/signin
+        objective: Integrate Better-Auth library into FastAPI backend for signup/signin.
+        inputs: ["`spec.md` (R-Auth-001, Clarifications: Better-Auth features)"]
+        outputs: ["Authentication routes (`POST /auth/signup`, `POST /auth/signin`) working with Email/Password and session management"]
+        dependencies: ["M1.3"]
+        acceptance_criteria: ["`spec.md`: User Story: Mandatory Background Survey - Given a successful signup, the user is redirected to the Background Survey."]
+        status: completed
+      - id: 2.2
+        name: Implement OAuth2/JWT for API access control in FastAPI
+        objective: Implement OAuth2/JWT for API access control in FastAPI.
+        inputs: ["`spec.md` (R-Auth-002, FastAPI Endpoints & Security)"]
+        outputs: ["Middleware/decorators for JWT-protected endpoints"]
+        dependencies: ["M2.1"]
+        acceptance_criteria: ["`spec.md`: FastAPI Endpoints & Security - Use OAuth2/JWT for all protected endpoints."]
+        status: completed
+      - id: 2.3
+        name: Develop frontend signup/signin forms in Docusaurus
+        objective: Develop frontend signup/signin forms in Docusaurus.
+        inputs: ["`spec.md` (Clarifications: Better-Auth features)"]
+        outputs: ["React components for signup/signin, interacting with backend auth endpoints"]
+        dependencies: ["M1.2", "M2.1"]
+        acceptance_criteria: ["User can successfully sign up and sign in via the frontend."]
+        status: completed
+      - id: 2.4
+        name: Create Background Survey form in Docusaurus frontend
+        objective: Create Background Survey form in Docusaurus frontend.
+        inputs: ["`spec.md` (R-Survey-001, Clarifications: Background Survey questions)"]
+        outputs: ["React component for the survey with all specified questions"]
+        dependencies: ["M1.2"]
+        acceptance_criteria: ["`spec.md`: User Story: Mandatory Background Survey - Given a successful signup, the user is redirected to the Background Survey."]
+        status: completed
+      - id: 2.5
+        name: Implement post-signup redirect to Background Survey
+        objective: Implement post-signup redirect to Background Survey.
+        inputs: ["`spec.md` (Clarifications: Better-Auth features, Frontend Behavior)"]
+        outputs: ["Logic to redirect new users to the survey page immediately after successful signup"]
+        dependencies: ["M2.1", "M2.3", "M2.4"]
+        acceptance_criteria: ["`spec.md`: User Story: Mandatory Background Survey - Given a successful signup, the user is redirected to the Background Survey."]
+        status: completed
+  - id: M3
+    name: Background Metadata Storage + Required Endpoints
+    objective: Set up Neon Postgres for user background storage and implement backend API endpoints for profile management.
+    tasks:
+      - id: 3.1
+        name: Design and implement user_backgrounds table in Neon Postgres
+        objective: Design and implement `user_backgrounds` table in Neon Postgres.
+        inputs: ["`spec.md` (Neon Postgres Schema)"]
+        outputs: ["SQL migration script for `user_backgrounds` table, including indices"]
+        dependencies: ["M1.3"]
+        acceptance_criteria: ["`spec.md`: Neon Postgres Schema (Background Metadata table)."]
+        status: completed
+      - id: 3.2
+        name: Implement POST /users/{user_id}/background endpoint in FastAPI
+        objective: Implement `POST /users/{user_id}/background` endpoint in FastAPI.
+        inputs: ["`spec.md` (FastAPI Endpoints & Security, Neon Postgres Schema)"]
+        outputs: ["FastAPI endpoint to submit/update user background data, with auth decorator"]
+        dependencies: ["M2.2", "M3.1"]
+        acceptance_criteria: ["`spec.md`: User Story: Mandatory Background Survey - The survey results are stored in `user_backgrounds` table in Neon Postgres."]
+      - id: 3.3
+        name: Implement GET /users/{user_id}/background endpoint in FastAPI
+        objective: Implement `GET /users/{user_id}/background` endpoint in FastAPI.
+        inputs: ["`spec.md` (FastAPI Endpoints & Security, Neon Postgres Schema)"]
+        outputs: ["FastAPI endpoint to retrieve user background data, with auth decorator"]
+        dependencies: ["M2.2", "M3.1"]
+        acceptance_criteria: ["User can retrieve their background profile via API (internal testing)."]
+      - id: 3.4
+        name: Integrate survey submission with POST /users/{user_id}/background from frontend
+        objective: Integrate survey submission with `POST /users/{user_id}/background` from frontend.
+        inputs: ["M2.4"]
+        outputs: ["Frontend logic to send survey data to backend"]
+        dependencies: ["M2.4", "M3.2"]
+        acceptance_criteria: ["`spec.md`: User Story: Mandatory Background Survey - The survey results are stored in `user_backgrounds` table in Neon Postgres."]
+      - id: 3.5
+        name: Implement GET /auth/me endpoint
+        objective: Implement `GET /auth/me` endpoint.
+        inputs: ["`spec.md` (FastAPI Endpoints & Security)"]
+        outputs: ["FastAPI endpoint to return current user profile, with auth decorator"]
+        dependencies: ["M2.2"]
+        acceptance_criteria: ["Frontend can fetch the current user's profile."]
+  - id: M4
+    name: Book Ingestion Pipeline (Qdrant Collections)
+    objective: Develop and execute the process for ingesting book content into Qdrant vector collections.
+    tasks:
+      - id: 4.1
+        name: Develop scripts/utilities for parsing book content (Markdown, code, diagrams)
+        objective: Develop scripts/utilities for parsing book content (Markdown, code, diagrams).
+        inputs: ["`spec.md` (Qdrant Usage Clarification, existing Docusaurus content)"]
+        outputs: ["Python scripts to extract text chunks, code snippets, and diagram descriptions"]
+        dependencies: ["M1.3"]
+        acceptance_criteria: ["Scripts successfully parse various content types."]
+      - id: 4.2
+        name: Implement text chunking and metadata extraction for Qdrant
+        objective: Implement text chunking and metadata extraction for Qdrant.
+        inputs: ["`spec.md` (Qdrant Usage Clarification - `book_text_chunks` metadata)"]
+        outputs: ["Logic to chunk text, extract `chapter_title`, `section_heading`, `page_number`, `source_file`, `text_chunk_id`, `keywords`"]
+        dependencies: ["M4.1"]
+        acceptance_criteria: ["Content is correctly chunked with all specified metadata."]
+      - id: 4.3
+        name: Implement code snippet extraction and metadata
+        objective: Implement code snippet extraction and metadata.
+        inputs: ["`spec.md` (Qdrant Usage Clarification - `code_snippets` metadata)"]
+        outputs: ["Logic to extract code, `chapter_title`, `section_heading`, `language`, `code_example_id`, `keywords`, `description`"]
+        dependencies: ["M4.1"]
+        acceptance_criteria: ["Code snippets are extracted with all specified metadata."]
+      - id: 4.4
+        name: Implement diagram description extraction and metadata
+        objective: Implement diagram description extraction and metadata.
+        inputs: ["`spec.md` (Qdrant Usage Clarification - `diagram_descriptions` metadata)"]
+        outputs: ["Logic to extract descriptions, `chapter_title`, `figure_number`, `description_id`, `keywords`, `alt_text`"]
+        dependencies: ["M4.1"]
+        acceptance_criteria: ["Diagram descriptions are extracted with all specified metadata."]
+      - id: 4.5
+        name: Implement vector embedding generation for all content types
+        objective: Implement vector embedding generation for all content types.
+        inputs: ["LLM (Gemini via CCR)", "content from M4.2-4.4"]
+        outputs: ["Vector embeddings for all content chunks"]
+        dependencies: ["M1.4"]
+        acceptance_criteria: ["Content can be embedded into vectors."]
+      - id: 4.6
+        name: Store vectorized content and metadata in Qdrant collections
+        objective: Store vectorized content and metadata in Qdrant collections.
+        inputs: ["`spec.md` (Qdrant Usage Clarification)", "embeddings from M4.5"]
+        outputs: ["Qdrant collections (`book_text_chunks`, `code_snippets`, `diagram_descriptions`) populated with data"]
+        dependencies: ["M1.4", "M4.2", "M4.3", "M4.4", "M4.5"]
+        acceptance_criteria: ["Qdrant is populated, no user background metadata is stored in Qdrant."]
+  - id: M5
+    name: Personalization Engine + Urdu Translation
+    objective: Implement the core logic for content personalization and Urdu translation in the backend and integrate with the frontend.
+    tasks:
+      - id: 5.1
+        name: Develop personalization logic in FastAPI
+        objective: Develop personalization logic in FastAPI.
+        inputs: ["`spec.md` (R-Personalize-001, Clarifications: Personalization Button behavior, User Background Survey questions, `GET /users/{user_id}/background`)"]
+        outputs: ["Internal service/function to take chapter content and user profile, and return personalized content. Uses LLM (Gemini via CCR)."]
+        dependencies: ["M3.3", "M1.4", "M4.5"]
+        acceptance_criteria: ["Personalization logic can adapt analogies and technical depth."]
+      - id: 5.2
+        name: Implement POST /personalize/chapter/{chapter_id} endpoint in FastAPI
+        objective: Implement `POST /personalize/chapter/{chapter_id}` endpoint in FastAPI.
+        inputs: ["`spec.md` (FastAPI Endpoints & Security)"]
+        outputs: ["FastAPI endpoint for personalized content, with auth decorator"]
+        dependencies: ["M2.2", "M5.1"]
+        acceptance_criteria: ["`spec.md`: User Story: Personalize Chapter Content - When clicked, the system returns a version of the chapter customized for the user's `interest_field` and `programming_level`."]
+      - id: 5.3
+        name: Develop Urdu translation logic in FastAPI
+        objective: Develop Urdu translation logic in FastAPI.
+        inputs: ["`spec.md` (R-Translate-001, Clarifications: Personalization Button behavior)"]
+        outputs: ["Internal service/function to take chapter content and return Urdu translation. Uses LLM (Gemini via CCR)."]
+        dependencies: ["M1.4"]
+        acceptance_criteria: ["Translation logic can translate content to Urdu."]
+      - id: 5.4
+        name: Implement POST /translate/chapter/{chapter_id} endpoint in FastAPI
+        objective: Implement `POST /translate/chapter/{chapter_id}` endpoint in FastAPI.
+        inputs: ["`spec.md` (FastAPI Endpoints & Security)"]
+        outputs: ["FastAPI endpoint for Urdu translation, with auth decorator"]
+        dependencies: ["M2.2", "M5.3"]
+        acceptance_criteria: ["`spec.md`: User Story: Personalize Chapter Content - A "Translate to Urdu" button is visible at chapter start and returns an Urdu translation when clicked."]
+      - id: 5.5
+        name: Implement frontend Personalize Content button logic
+        objective: Implement frontend "Personalize Content" button logic.
+        inputs: ["`spec.md` (R-Personalize-001, Frontend Behavior, `GET /auth/me`, `POST /personalize/chapter/{chapter_id}`)"]
+        outputs: ["Frontend button that fetches personalized content and updates chapter display. Disabled until survey completed."]
+        dependencies: ["M2.5", "M3.5", "M5.2"]
+        acceptance_criteria: ["`spec.md`: User Story: Personalize Chapter Content.", "`spec.md`: User Story: Mandatory Background Survey - The user cannot use the "Personalize Content" feature until all required survey fields are completed."]
+      - id: 5.6
+        name: Implement frontend Translate to Urdu button logic
+        objective: Implement frontend "Translate to Urdu" button logic.
+        inputs: ["`spec.md` (R-Translate-001, Frontend Behavior, `POST /translate/chapter/{chapter_id}`)"]
+        outputs: ["Frontend button that fetches Urdu translation and displays it."]
+        dependencies: ["M5.4"]
+        acceptance_criteria: ["`spec.md`: User Story: Personalize Chapter Content - A "Translate to Urdu" button is visible at chapter start and returns an Urdu translation when clicked."]
+  - id: M6
+    name: RAG Chatbot with Retrieval + Rewriting
+    objective: Integrate the RAG chatbot functionality, including retrieval from Qdrant and LLM-powered response generation.
+    tasks:
+      - id: 6.1
+        name: Implement RAG retrieval logic in FastAPI (combining Qdrant search and selected text)
+        objective: Implement RAG retrieval logic in FastAPI (combining Qdrant search and selected text).
+        inputs: ["`spec.md` (FR-003, FR-004, User Story 2, Qdrant Usage Clarification)"]
+        outputs: ["Internal service to perform Qdrant queries based on user input and selected text"]
+        dependencies: ["M4.6"]
+        acceptance_criteria: ["Internal RAG retrieval successfully fetches relevant content."]
+      - id: 6.2
+        name: Integrate LLM (Gemini via CCR) for RAG response generation
+        objective: Integrate LLM (Gemini via CCR) for RAG response generation.
+        inputs: ["`spec.md` (C-001, FR-007)", "RAG retrieval from M6.1"]
+        outputs: ["Logic to feed retrieved content and user query to LLM and generate a concise answer"]
+        dependencies: ["M1.4", "M6.1"]
+        acceptance_criteria: ["`spec.md`: User Story: 2 - The chatbot provides a concise and accurate answer."]
+      - id: 6.3
+        name: Implement FastAPI endpoint for RAG chatbot queries
+        objective: Implement FastAPI endpoint for RAG chatbot queries.
+        inputs: ["`spec.md` (FR-003, FR-004, FastAPI Endpoints & Security)"]
+        outputs: ["`POST /rag/query` (or similar) endpoint, potentially protected"]
+        dependencies: ["M6.1", "M6.2"]
+        acceptance_criteria: ["`spec.md`: User Story: 2 - When they type a question related to the book content into the chatbot, Then the chatbot provides a concise and accurate answer."]
+      - id: 6.4
+        name: Integrate RAG chatbot UI in Docusaurus frontend
+        objective: Integrate RAG chatbot UI in Docusaurus frontend.
+        inputs: ["`spec.md` (User Story 2, Frontend Behavior)"]
+        outputs: ["Contextual pop-up UI", "text selection mechanism", ""Ask Chatbot about this" button", "display of chatbot responses"]
+        dependencies: ["M1.2", "M6.3"]
+        acceptance_criteria: ["`spec.md`: User Story: 2."]
+      - id: 6.5
+        name: Implement POST /feedback/personalization endpoint
+        objective: Implement `POST /feedback/personalization` endpoint.
+        inputs: ["`spec.md` (FastAPI Endpoints & Security)"]
+        outputs: ["FastAPI endpoint to collect user feedback"]
+        dependencies: ["M1.3"]
+        acceptance_criteria: ["Frontend can submit feedback to the backend."]
+  - id: M7
+    name: Testing (Unit, Integration, E2E, RAG Metrics)
+    objective: Develop and execute the process for ingesting book content into Qdrant vector collections.
+    tasks:
+      - id: 7.1
+        name: Develop unit tests for backend (FastAPI, auth, personalization logic, RAG retrieval)
+        objective: Develop unit tests for backend (FastAPI, auth, personalization logic, RAG retrieval).
+        inputs: ["`spec.md` (Testing Requirements - Unit Tests)"]
+        outputs: ["Comprehensive suite of unit tests"]
+        dependencies: ["M1.3", "M2", "M3", "M5", "M6"]
+        acceptance_criteria: ["All backend unit tests pass."]
+      - id: 7.2
+        name: Develop integration tests for backend (DB interactions, API endpoint calls)
+        objective: Develop integration tests for backend (DB interactions, API endpoint calls).
+        inputs: ["`spec.md` (Testing Requirements - Integration Tests)"]
+        outputs: ["Integration test suite"]
+        dependencies: ["M1.3", "M2", "M3", "M5", "M6"]
+        acceptance_criteria: ["All backend integration tests pass."]
+      - id: 7.3
+        name: Develop frontend unit/component tests (React components, UI logic)
+        objective: Develop frontend unit/component tests (React components, UI logic).
+        inputs: ["`spec.md` (Testing Requirements - Unit Tests)"]
+        outputs: ["Frontend test suite"]
+        dependencies: ["M1.2", "M2", "M5", "M6"]
+        acceptance_criteria: ["All frontend unit/component tests pass."]
+      - id: 7.4
+        name: Develop end-to-end tests (user flows: signup -> survey -> personalize -> RAG query)
+        objective: Develop end-to-end tests (user flows: signup -> survey -> personalize -> RAG query).
+        inputs: ["`spec.md` (Testing Requirements - End-to-End Tests, User Stories)"]
+        outputs: ["E2E test suite (e.g., Playwright, Cypress)"]
+        dependencies: ["M1", "M2", "M3", "M4", "M5", "M6"]
+        acceptance_criteria: ["`spec.md`: User Stories, all acceptance scenarios covered."]
+      - id: 7.5
+        name: Implement RAG-specific evaluation metrics and tests
+        objective: Implement RAG-specific evaluation metrics and tests.
+        inputs: ["`spec.md` (Testing Requirements - RAG-specific Evaluation Metrics, Success Criteria)"]
+        outputs: ["Evaluation framework for RAG accuracy and relevance"]
+        dependencies: ["M6"]
+        acceptance_criteria: ["`spec.md`: SC-002: The RAG chatbot answers questions based on book content with at least 90% accuracy."]
+  - id: M8
+    name: Deployment (Frontend Static + Backend Serverless)
+    objective: Deploy the Docusaurus frontend to a static hosting service and the FastAPI backend to a serverless platform.
+    tasks:
+      - id: 8.1
+        name: Configure Docusaurus for static site generation and GitHub Pages deployment
+        objective: Configure Docusaurus for static site generation and GitHub Pages deployment.
+        inputs: ["`spec.md` (FR-002, Deployment Requirements - Static Frontend)"]
+        outputs: ["Docusaurus build configuration", "GitHub Actions workflow for deployment"]
+        dependencies: ["M1.2", "M7.3"]
+        acceptance_criteria: ["`spec.md`: FR-002."]
+      - id: 8.2
+        name: Package FastAPI backend for serverless deployment
+        objective: Package FastAPI backend for serverless deployment.
+        inputs: ["`spec.md` (Deployment Requirements - Serverless Backend)"]
+        outputs: ["Dockerfile (if applicable)", "serverless configuration files"]
+        dependencies: ["M1.3", "M2", "M3", "M5", "M6"]
+        acceptance_criteria: ["Backend is ready for serverless deployment."]
+      - id: 8.3
+        name: Implement CI/CD pipeline for Docusaurus frontend deployment to GitHub Pages
+        objective: Implement CI/CD pipeline for Docusaurus frontend deployment to GitHub Pages.
+        inputs: ["M8.1"]
+        outputs: ["Working GitHub Actions workflow"]
+        dependencies: ["M8.1"]
+        acceptance_criteria: ["`spec.md`: SC-003: The CI/CD pipeline for GitHub Pages deployment works flawlessly."]
+      - id: 8.4
+        name: Implement CI/CD pipeline for FastAPI backend deployment to chosen serverless platform
+        objective: Implement `CI/CD` pipeline for FastAPI backend deployment to chosen serverless platform.
+        inputs: ["M8.2"]
+        outputs: ["Working CI/CD pipeline (e.g., GitHub Actions, relevant cloud provider CI)"]
+        dependencies: ["M8.2"]
+        acceptance_criteria: ["Backend is successfully deployed."]
+      - id: 8.5
+        name: Configure environment variables and secrets for deployment
+        objective: Configure environment variables and secrets for deployment.
+        inputs: ["`.env` placeholders from M1.4", "`CLAUDE.md` (Secrets Handling)"]
+        outputs: ["Securely configured deployment environment"]
+        dependencies: ["M1.4", "M8.1", "M8.2"]
+        acceptance_criteria: ["No secrets committed to repo, deployment is functional."]

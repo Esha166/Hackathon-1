@@ -1,5 +1,9 @@
 fastapi
 uvicorn
+fastapi-users[sqlalchemy]
+alembic
 qdrant-client
 python-dotenv
-requests   
+requests
+asyncpg
+python-frontmatter
