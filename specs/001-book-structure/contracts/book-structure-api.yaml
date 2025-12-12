@@ -1,0 +1,93 @@
+# OpenAPI Contract: Book Structure Generation
+
+```yaml
+openapi: 3.0.0
+info:
+  title: Book Structure Generation API
+  version: 1.0.0
+  description: API for generating hierarchical book structures with modules, chapters, and topics
+
+paths:
+  /book-structure:
+    get:
+      summary: Generate a book structure
+      description: Creates a hierarchical book structure with 5 modules, 5-10 chapters per module, and 12-20 topics per chapter
+      responses:
+        '200':
+          description: Successfully generated book structure
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BookStructure'
+              example:
+                modules:
+                  - name: "Introduction to Robotics"
+                    chapters:
+                      - name: "Basic Robot Components"
+                        topics:
+                          - "Sensors and Actuators"
+                          - "Control Systems"
+                          - "Power Sources"
+                          # ... more topics
+                      # ... more chapters
+                  # ... more modules
+        '400':
+          description: Validation error with detailed message
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Detailed error message with specific validation failures
+
+components:
+  schemas:
+    BookStructure:
+      type: object
+      properties:
+        modules:
+          type: array
+          items:
+            $ref: '#/components/schemas/Module'
+          description: List of modules in the book structure
+          minItems: 5
+          maxItems: 5
+
+    Module:
+      type: object
+      required:
+        - name
+        - chapters
+      properties:
+        name:
+          type: string
+          description: Descriptive name of the module based on potential content
+          minLength: 1
+        chapters:
+          type: array
+          items:
+            $ref: '#/components/schemas/Chapter'
+          description: List of chapters in the module
+          minItems: 5
+          maxItems: 10
+
+    Chapter:
+      type: object
+      required:
+        - name
+        - topics
+      properties:
+        name:
+          type: string
+          description: Descriptive name of the chapter based on potential content
+          minLength: 1
+        topics:
+          type: array
+          items:
+            type: string
+          description: List of topics in the chapter with realistic names based on potential subject matter
+          minItems: 12
+          maxItems: 20
+```

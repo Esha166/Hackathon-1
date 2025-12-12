@@ -5,6 +5,25 @@
 **Status**: Draft
 **Input**: User description: "Task: Create book structure Modules: 5 Chapters per module: 5-10 Topics per chapter: 12-20 Format: JSON Output: module -> chapter -> topics"
 
+## Clarifications
+
+### Session 2025-12-11
+
+- Q: What are the performance and scalability requirements? 
+  → A: No specific targets, optimize for maintainability and correctness
+  
+- Q: How should topic names be generated? 
+  → A: Generate realistic topic names based on potential subject matter
+  
+- Q: How should chapter names be generated? 
+  → A: Generate descriptive names based on potential content
+  
+- Q: How should module names be generated? 
+  → A: Generate descriptive names based on potential content
+  
+- Q: How should errors be handled and reported? 
+  → A: Return detailed error messages with specific validation failures
+
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - Generate Basic Book Structure (Priority: P1)

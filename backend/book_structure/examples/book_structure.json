@@ -1,0 +1,2155 @@
+{
+  "subject": "Python Programming",
+  "modules": [
+    {
+      "name": "Python Programming: Fundamentals and Basics",
+      "chapters": [
+        {
+          "name": "Python Programming: Introduction to Python",
+          "topics": [
+            {
+              "name": "Python Programming: Understanding Python Syntax",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Installing Python Environment",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Variables and Data Types",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Basic Operators",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Input and Output",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Comments and Docstrings",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Basic Data Structures",
+              "description": null
+            },
+            {
+              "name": "Python Programming: String Formatting",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Type Conversion",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Error Handling Basics",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Working with Numbers",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Boolean Values",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Basic Functions",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Basic Libraries",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Code Organization",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Basic Algorithms",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Performance Considerations",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Common Pitfalls",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Best Practices",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Code Review Checklist",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Python Programming: Control Flow and Functions",
+          "topics": [
+            {
+              "name": "Python Programming: Conditional Statements",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Looping Constructs",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Function Definition",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Function Parameters",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Lambda Functions",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Recursion",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Exception Handling",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Context Managers",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Generators",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Iterators",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Decorators",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Closures",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Scope and Namespace",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Return Values",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Function Annotations",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Higher-Order Functions",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Partial Functions",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Function Composition",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Functional Programming",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Control Flow Best Practices",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Python Programming: Data Structures",
+          "topics": [
+            {
+              "name": "Python Programming: Lists and Tuples",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Dictionaries",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Sets",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Named Tuples",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Default Dictionaries",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Counters",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Deques",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Ordered Dictionaries",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Arrays",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Stacks",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Queues",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Priority Queues",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Trees",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Graphs",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Hash Tables",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Data Structure Selection",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Performance Analysis",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Memory Management",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Serialization",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Data Structure Best Practices",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Python Programming: Object-Oriented Programming",
+          "topics": [
+            {
+              "name": "Python Programming: Classes and Objects",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Attributes and Methods",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Inheritance",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Polymorphism",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Encapsulation",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Abstraction",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Special Methods",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Properties",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Descriptors",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Metaclasses",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Composition",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Mixins",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Abstract Base Classes",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Multiple Inheritance",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Method Resolution Order",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Class Design Patterns",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Object Lifecycle",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Object Relationships",
+              "description": null
+            },
+            {
+              "name": "Python Programming: OOP Best Practices",
+              "description": null
+            },
+            {
+              "name": "Python Programming: SOLID Principles",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Python Programming: Advanced Concepts",
+          "topics": [
+            {
+              "name": "Python Programming: Modules and Packages",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Import System",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Virtual Environments",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Testing Frameworks",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Debugging Techniques",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Logging",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Concurrency",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Threading",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Multiprocessing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Async Programming",
+              "description": null
+            },
+            {
+              "name": "Python Programming: File Operations",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Database Access",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Web Development",
+              "description": null
+            },
+            {
+              "name": "Python Programming: API Development",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Performance Optimization",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Memory Profiling",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Code Profiling",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Security Considerations",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Deployment Strategies",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Advanced Best Practices",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Python Programming: Data Handling and Analysis",
+      "chapters": [
+        {
+          "name": "Python Programming: File I/O Operations",
+          "topics": [
+            {
+              "name": "Python Programming: Reading Files",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Writing Files",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Binary Files",
+              "description": null
+            },
+            {
+              "name": "Python Programming: CSV Files",
+              "description": null
+            },
+            {
+              "name": "Python Programming: JSON Files",
+              "description": null
+            },
+            {
+              "name": "Python Programming: XML Files",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Pickle Files",
+              "description": null
+            },
+            {
+              "name": "Python Programming: File Permissions",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Path Handling",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Directory Operations",
+              "description": null
+            },
+            {
+              "name": "Python Programming: File Compression",
+              "description": null
+            },
+            {
+              "name": "Python Programming: File Locking",
+              "description": null
+            },
+            {
+              "name": "Python Programming: File Validation",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Streaming Data",
+              "description": null
+            },
+            {
+              "name": "Python Programming: File Encoding",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Error Handling in I/O",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Memory Mapping",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Large File Handling",
+              "description": null
+            },
+            {
+              "name": "Python Programming: File Security",
+              "description": null
+            },
+            {
+              "name": "Python Programming: I/O Best Practices",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Python Programming: Working with External Libraries",
+          "topics": [
+            {
+              "name": "Python Programming: NumPy Library",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Pandas Library",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Matplotlib Library",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Requests Library",
+              "description": null
+            },
+            {
+              "name": "Python Programming: BeautifulSoup Library",
+              "description": null
+            },
+            {
+              "name": "Python Programming: SQLAlchemy Library",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Django Framework",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Flask Framework",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Scikit-learn Library",
+              "description": null
+            },
+            {
+              "name": "Python Programming: TensorFlow Library",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Requests-HTTP Operations",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Date and Time Libraries",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Regular Expression Library",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Cryptography Libraries",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Image Processing Libraries",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Audio Processing Libraries",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Video Processing Libraries",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Scientific Computing Libraries",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Network Programming Libraries",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Library Management Best Practices",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Python Programming: Testing and Quality Assurance",
+          "topics": [
+            {
+              "name": "Python Programming: Unit Testing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Integration Testing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Mock Objects",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Test Fixtures",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Test-Driven Development",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Behavior-Driven Development",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Code Coverage",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Performance Testing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Security Testing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Fuzz Testing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Property-Based Testing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Continuous Integration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Static Analysis",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Linting",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Code Formatting",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Type Checking",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Code Review Practices",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Quality Metrics",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Bug Tracking",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Quality Assurance Best Practices",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Python Programming: Web Development",
+          "topics": [
+            {
+              "name": "Python Programming: HTTP Protocol",
+              "description": null
+            },
+            {
+              "name": "Python Programming: REST APIs",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Web Frameworks",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Template Engines",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Database Integration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Authentication",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Authorization",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Session Management",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Form Handling",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Validation",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Error Handling",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Caching",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Rate Limiting",
+              "description": null
+            },
+            {
+              "name": "Python Programming: CORS",
+              "description": null
+            },
+            {
+              "name": "Python Programming: WebSockets",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Web Security",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Deployment",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Scalability",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Monitoring",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Web Development Best Practices",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Python Programming: Data Science and Machine Learning",
+          "topics": [
+            {
+              "name": "Python Programming: Data Cleaning",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Data Transformation",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Exploratory Data Analysis",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Statistical Analysis",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Data Visualization",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Feature Engineering",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Model Selection",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Model Training",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Model Evaluation",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Model Deployment",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Supervised Learning",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Unsupervised Learning",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Deep Learning",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Natural Language Processing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Computer Vision",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Time Series Analysis",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Big Data Processing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Cloud Computing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: MLOps",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Data Science Best Practices",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Python Programming: System Programming",
+      "chapters": [
+        {
+          "name": "Python Programming: Operating System Interaction",
+          "topics": [
+            {
+              "name": "Python Programming: OS Module",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Subprocess Module",
+              "description": null
+            },
+            {
+              "name": "Python Programming: System Calls",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Process Management",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Threading",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Multiprocessing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Signal Handling",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Shared Memory",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Inter-Process Communication",
+              "description": null
+            },
+            {
+              "name": "Python Programming: File System Operations",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Environment Variables",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Command Line Arguments",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Shell Integration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: System Monitoring",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Performance Profiling",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Memory Management",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Resource Limits",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Platform-Specific Features",
+              "description": null
+            },
+            {
+              "name": "Python Programming: System Security",
+              "description": null
+            },
+            {
+              "name": "Python Programming: System Programming Best Practices",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Python Programming: Network Programming",
+          "topics": [
+            {
+              "name": "Python Programming: Socket Programming",
+              "description": null
+            },
+            {
+              "name": "Python Programming: TCP/IP Protocols",
+              "description": null
+            },
+            {
+              "name": "Python Programming: UDP Protocols",
+              "description": null
+            },
+            {
+              "name": "Python Programming: HTTP Client",
+              "description": null
+            },
+            {
+              "name": "Python Programming: HTTP Server",
+              "description": null
+            },
+            {
+              "name": "Python Programming: WebSockets",
+              "description": null
+            },
+            {
+              "name": "Python Programming: FTP Operations",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Email Protocols",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Network Security",
+              "description": null
+            },
+            {
+              "name": "Python Programming: SSL/TLS Integration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Network Monitoring",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Network Protocols",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Network Libraries",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Asynchronous Networking",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Network Performance",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Network Testing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Network Troubleshooting",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Network Architecture",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Client-Server Applications",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Network Programming Best Practices",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Python Programming: Database Programming",
+          "topics": [
+            {
+              "name": "Python Programming: SQL Databases",
+              "description": null
+            },
+            {
+              "name": "Python Programming: NoSQL Databases",
+              "description": null
+            },
+            {
+              "name": "Python Programming: SQLite Integration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: PostgreSQL Integration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: MySQL Integration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: MongoDB Integration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Database Connections",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Connection Pooling",
+              "description": null
+            },
+            {
+              "name": "Python Programming: SQL Queries",
+              "description": null
+            },
+            {
+              "name": "Python Programming: ORM Frameworks",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Database Transactions",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Database Migration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Database Security",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Database Performance",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Database Backup",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Database Recovery",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Database Monitoring",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Database Design",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Database Optimization",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Database Programming Best Practices",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Python Programming: Security Programming",
+          "topics": [
+            {
+              "name": "Python Programming: Cryptographic Libraries",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Hash Functions",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Encryption",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Decryption",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Digital Signatures",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Key Management",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Certificate Handling",
+              "description": null
+            },
+            {
+              "name": "Python Programming: SSL/TLS Implementation",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Authentication Methods",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Authorization Methods",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Session Security",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Input Validation",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Injection Prevention",
+              "description": null
+            },
+            {
+              "name": "Python Programming: XSS Prevention",
+              "description": null
+            },
+            {
+              "name": "Python Programming: CSRF Protection",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Secure Coding Practices",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Security Testing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Vulnerability Assessment",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Security Monitoring",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Security Programming Best Practices",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Python Programming: Performance Optimization",
+          "topics": [
+            {
+              "name": "Python Programming: Profiling Tools",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Memory Profiling",
+              "description": null
+            },
+            {
+              "name": "Python Programming: CPU Profiling",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Performance Analysis",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Algorithm Optimization",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Data Structure Optimization",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Code Optimization",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Caching Strategies",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Lazy Evaluation",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Memoization",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Parallel Processing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Concurrent Programming",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Asynchronous Programming",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Just-In-Time Compilation",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Extension Modules",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Memory Management",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Garbage Collection",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Resource Management",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Performance Monitoring",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Performance Optimization Best Practices",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Python Programming: Specialized Applications",
+      "chapters": [
+        {
+          "name": "Python Programming: Game Development",
+          "topics": [
+            {
+              "name": "Python Programming: Pygame Library",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Game Architecture",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Game Loop",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Graphics Rendering",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Sound and Music",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Input Handling",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Collision Detection",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Physics Simulation",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Animation",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Artificial Intelligence in Games",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Game State Management",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Level Design",
+              "description": null
+            },
+            {
+              "name": "Python Programming: User Interface",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Multiplayer Networking",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Game Testing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Game Performance",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Game Publishing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Game Monetization",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Game Development Tools",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Game Development Best Practices",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Python Programming: Desktop Applications",
+          "topics": [
+            {
+              "name": "Python Programming: Tkinter Framework",
+              "description": null
+            },
+            {
+              "name": "Python Programming: PyQt Framework",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Kivy Framework",
+              "description": null
+            },
+            {
+              "name": "Python Programming: GUI Design Principles",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Event Handling",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Widget Management",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Layout Management",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Threading in GUIs",
+              "description": null
+            },
+            {
+              "name": "Python Programming: File Dialogs",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Menu Systems",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Drag and Drop",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Clipboard Operations",
+              "description": null
+            },
+            {
+              "name": "Python Programming: System Integration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Application Packaging",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Cross-Platform Development",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Desktop Application Security",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Performance Optimization",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Accessibility",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Desktop Application Testing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Desktop Application Best Practices",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Python Programming: Mobile Development",
+          "topics": [
+            {
+              "name": "Python Programming: Kivy Framework",
+              "description": null
+            },
+            {
+              "name": "Python Programming: BeeWare Framework",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Mobile UI Design",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Touch Input",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Mobile Sensors",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Mobile Storage",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Mobile Networking",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Platform Integration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Mobile Performance",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Mobile Security",
+              "description": null
+            },
+            {
+              "name": "Python Programming: App Store Submission",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Mobile Testing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Mobile Analytics",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Push Notifications",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Mobile Monetization",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Cross-Platform Mobile",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Mobile Framework Comparison",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Mobile Development Tools",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Mobile Architecture",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Mobile Development Best Practices",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Python Programming: Scientific Computing",
+          "topics": [
+            {
+              "name": "Python Programming: NumPy Library",
+              "description": null
+            },
+            {
+              "name": "Python Programming: SciPy Library",
+              "description": null
+            },
+            {
+              "name": "Python Programming: SymPy Library",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Matplotlib Library",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Pandas Library",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Data Analysis",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Statistical Analysis",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Mathematical Modeling",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Simulation",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Visualization",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Numerical Methods",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Optimization",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Machine Learning",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Signal Processing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Image Processing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Audio Processing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Scientific Workflow",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Reproducible Research",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Scientific Publishing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Scientific Computing Best Practices",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Python Programming: DevOps and Automation",
+          "topics": [
+            {
+              "name": "Python Programming: Infrastructure as Code",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Configuration Management",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Deployment Automation",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Continuous Integration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Continuous Deployment",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Containerization",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Orchestration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Monitoring",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Logging",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Testing Automation",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Security Automation",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Backup and Recovery",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Performance Monitoring",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Alerting Systems",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Cloud Management",
+              "description": null
+            },
+            {
+              "name": "Python Programming: API Management",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Documentation Generation",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Code Quality Tools",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Package Management",
+              "description": null
+            },
+            {
+              "name": "Python Programming: DevOps and Automation Best Practices",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Python Programming: Emerging Technologies",
+      "chapters": [
+        {
+          "name": "Python Programming: Artificial Intelligence",
+          "topics": [
+            {
+              "name": "Python Programming: Machine Learning Fundamentals",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Deep Learning",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Neural Networks",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Natural Language Processing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Computer Vision",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Reinforcement Learning",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Generative AI",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AI Model Training",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AI Model Deployment",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AI Ethics",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AI Performance",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AI Security",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AI Testing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AI Monitoring",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AI Frameworks",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AI Libraries",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AI Hardware Acceleration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AI Applications",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AI Research",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AI Development Best Practices",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Python Programming: Internet of Things",
+          "topics": [
+            {
+              "name": "Python Programming: IoT Device Programming",
+              "description": null
+            },
+            {
+              "name": "Python Programming: MicroPython",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Raspberry Pi Programming",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Arduino Integration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Sensor Integration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Actuator Control",
+              "description": null
+            },
+            {
+              "name": "Python Programming: IoT Communication Protocols",
+              "description": null
+            },
+            {
+              "name": "Python Programming: MQTT Protocol",
+              "description": null
+            },
+            {
+              "name": "Python Programming: CoAP Protocol",
+              "description": null
+            },
+            {
+              "name": "Python Programming: IoT Security",
+              "description": null
+            },
+            {
+              "name": "Python Programming: IoT Data Processing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: IoT Analytics",
+              "description": null
+            },
+            {
+              "name": "Python Programming: IoT Cloud Integration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: IoT Edge Computing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: IoT Monitoring",
+              "description": null
+            },
+            {
+              "name": "Python Programming: IoT Testing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: IoT Performance",
+              "description": null
+            },
+            {
+              "name": "Python Programming: IoT Standards",
+              "description": null
+            },
+            {
+              "name": "Python Programming: IoT Applications",
+              "description": null
+            },
+            {
+              "name": "Python Programming: IoT Development Best Practices",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Python Programming: Blockchain and Cryptocurrency",
+          "topics": [
+            {
+              "name": "Python Programming: Blockchain Fundamentals",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Cryptographic Hashing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Digital Signatures",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Consensus Algorithms",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Smart Contracts",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Cryptocurrency Wallets",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Trading Bots",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Blockchain APIs",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Cryptocurrency Exchanges",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Blockchain Security",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Blockchain Performance",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Blockchain Testing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Blockchain Analytics",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Decentralized Applications",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Web3 Integration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: NFT Development",
+              "description": null
+            },
+            {
+              "name": "Python Programming: DeFi Applications",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Blockchain Standards",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Blockchain Applications",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Blockchain Development Best Practices",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Python Programming: Augmented and Virtual Reality",
+          "topics": [
+            {
+              "name": "Python Programming: AR/VR Fundamentals",
+              "description": null
+            },
+            {
+              "name": "Python Programming: 3D Graphics Programming",
+              "description": null
+            },
+            {
+              "name": "Python Programming: OpenGL Integration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Unity Integration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Blender Integration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Spatial Computing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Motion Tracking",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Gesture Recognition",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Haptic Feedback",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AR/VR Security",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AR/VR Performance",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AR/VR Testing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AR/VR Analytics",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AR/VR User Experience",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AR/VR Content Creation",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AR/VR Applications",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AR/VR Hardware Integration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AR/VR Standards",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AR/VR Development Tools",
+              "description": null
+            },
+            {
+              "name": "Python Programming: AR/VR Development Best Practices",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Python Programming: Quantum Computing",
+          "topics": [
+            {
+              "name": "Python Programming: Quantum Computing Fundamentals",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Quantum Algorithms",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Quantum Simulation",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Qiskit Framework",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Cirq Framework",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Quantum Error Correction",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Quantum Cryptography",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Quantum Machine Learning",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Quantum Hardware Integration",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Quantum Programming Languages",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Quantum Performance",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Quantum Testing",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Quantum Analytics",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Quantum Applications",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Quantum Standards",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Quantum Research",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Quantum Development Tools",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Quantum Security",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Quantum Development Best Practices",
+              "description": null
+            },
+            {
+              "name": "Python Programming: Quantum Development Future Trends",
+              "description": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

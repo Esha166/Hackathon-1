@@ -1,0 +1,1603 @@
+{
+    "book": {
+        "title": "Physical AI & Humanoid Robotics",
+        "subject": "AI Systems in the Physical World - Embodied Intelligence",
+        "description": "Bridging the gap between the digital brain and the physical body. Learn to design, simulate, and deploy humanoid robots capable of natural human interactions.",
+        "modules": [
+            {
+                "order": 1,
+                "title": "The Robotic Nervous System (ROS 2)",
+                "description": "Middleware for robot control",
+                "chapters": [
+                    {
+                        "order": 1,
+                        "title": "Introduction to ROS 2 and Physical AI",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "What is Physical AI and Embodied Intelligence"
+                            },
+                            {
+                                "order": 2,
+                                "title": "The Evolution from Digital AI to Physical Robots"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Overview of the Humanoid Robotics Landscape"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Introduction to ROS 2 Architecture"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Why ROS 2 for Modern Robotics"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Comparison: ROS 1 vs ROS 2"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Understanding Middleware in Robotics"
+                            },
+                            {
+                                "order": 8,
+                                "title": "The DDS (Data Distribution Service) Protocol"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Setting Up Your ROS 2 Development Environment"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Installing ROS 2 Humble on Ubuntu 22.04"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Configuring Your Workspace"
+                            },
+                            {
+                                "order": 12,
+                                "title": "First ROS 2 Command Line Tools"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 2,
+                        "title": "ROS 2 Core Concepts: Nodes and Communication",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Understanding ROS 2 Nodes"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Creating Your First ROS 2 Node in Python"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Node Lifecycle and Management"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Introduction to Topics"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Publishers and Subscribers"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Message Types and Custom Messages"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Quality of Service (QoS) Policies"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Understanding Services in ROS 2"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Service Clients and Servers"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Introduction to Actions"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Action Servers and Clients"
+                            },
+                            {
+                                "order": 12,
+                                "title": "When to Use Topics vs Services vs Actions"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 3,
+                        "title": "Building with rclpy: Python for ROS 2",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Introduction to rclpy Library"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Node Initialization and Spinning"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Creating Publishers in Python"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Creating Subscribers in Python"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Callback Functions and Data Processing"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Timer Callbacks for Periodic Tasks"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Parameter Declaration and Usage"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Dynamic Parameter Reconfiguration"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Logging and Debugging in ROS 2"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Error Handling Best Practices"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Bridging Python AI Agents to ROS Controllers"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Integration Patterns for AI and Robotics"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 4,
+                        "title": "Robot Description with URDF",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Introduction to URDF (Unified Robot Description Format)"
+                            },
+                            {
+                                "order": 2,
+                                "title": "URDF XML Structure and Syntax"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Defining Links and Joints"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Joint Types: Revolute, Prismatic, Fixed"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Visual and Collision Properties"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Inertial Properties and Mass Distribution"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Understanding Humanoid Kinematics"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Modeling a Simple Humanoid in URDF"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Adding Sensors to URDF Models"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Xacro: Macros for URDF"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Visualizing URDF Models in RViz"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Best Practices for Robot Modeling"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 5,
+                        "title": "ROS 2 Packages and Launch Systems",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Understanding ROS 2 Package Structure"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Creating a New ROS 2 Package"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Package Dependencies and package.xml"
+                            },
+                            {
+                                "order": 4,
+                                "title": "CMakeLists.txt for Python Packages"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Organizing Code in ROS 2 Packages"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Introduction to Launch Files"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Python Launch File Syntax"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Starting Multiple Nodes with Launch"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Parameter Files and Configuration"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Remapping Topics and Parameters"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Composable Nodes and Component Architecture"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Building and Testing Your Package"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 6,
+                        "title": "Sensor Systems in Robotics",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Overview of Robot Sensor Systems"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Understanding LIDAR Technology"
+                            },
+                            {
+                                "order": 3,
+                                "title": "LIDAR Data Processing in ROS 2"
+                            },
+                            {
+                                "order": 4,
+                                "title": "RGB Cameras and Image Processing"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Depth Cameras and Point Clouds"
+                            },
+                            {
+                                "order": 6,
+                                "title": "IMU (Inertial Measurement Unit) Basics"
+                            },
+                            {
+                                "order": 7,
+                                "title": "IMU Data Fusion Techniques"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Force and Torque Sensors"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Tactile Sensors for Manipulation"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Sensor Calibration Procedures"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Multi-Sensor Fusion Strategies"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Handling Sensor Noise and Uncertainty"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "order": 2,
+                "title": "The Digital Twin (Gazebo & Unity)",
+                "description": "Physics simulation and environment building",
+                "chapters": [
+                    {
+                        "order": 1,
+                        "title": "Introduction to Robot Simulation",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Why Simulate Robots Before Building"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Benefits of Digital Twins in Robotics"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Overview of Simulation Tools: Gazebo vs Unity"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Simulation Fidelity and Accuracy"
+                            },
+                            {
+                                "order": 5,
+                                "title": "The Sim-to-Real Transfer Problem"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Physics Engines Overview"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Real-Time vs Non-Real-Time Simulation"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Hardware Requirements for Simulation"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Choosing the Right Simulator for Your Project"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Introduction to Gazebo Architecture"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Introduction to Unity for Robotics"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Setting Up Your Simulation Environment"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 2,
+                        "title": "Gazebo Fundamentals",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Installing Gazebo Fortress/Garden"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Gazebo GUI and Interface Overview"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Understanding World Files"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Creating Simple Simulation Environments"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Introduction to SDF (Simulation Description Format)"
+                            },
+                            {
+                                "order": 6,
+                                "title": "SDF vs URDF: Key Differences"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Converting URDF to SDF"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Adding Models to Gazebo"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Model Database and Resources"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Gazebo Plugins System"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Custom Plugin Development"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Gazebo-ROS 2 Integration"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 3,
+                        "title": "Physics Simulation in Gazebo",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Understanding Physics Engines"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Configuring Gravity and World Physics"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Simulating Rigid Body Dynamics"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Collision Detection and Response"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Contact Forces and Friction Models"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Joint Dynamics and Constraints"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Actuator Modeling and Control"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Damping and Spring-Damper Systems"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Soft Body Physics Basics"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Aerodynamics and Fluid Simulation"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Physics Parameter Tuning"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Debugging Physics Issues"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 4,
+                        "title": "Sensor Simulation in Gazebo",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Adding Sensors to Simulated Robots"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Simulating LIDAR Sensors"
+                            },
+                            {
+                                "order": 3,
+                                "title": "LIDAR Noise Models and Realism"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Camera Sensor Simulation"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Depth Camera Configuration"
+                            },
+                            {
+                                "order": 6,
+                                "title": "IMU Sensor Simulation"
+                            },
+                            {
+                                "order": 7,
+                                "title": "IMU Noise and Bias Modeling"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Force-Torque Sensor Simulation"
+                            },
+                            {
+                                "order": 9,
+                                "title": "GPS and Magnetometer Simulation"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Contact Sensors and Bumpers"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Ray Sensors for Obstacle Detection"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Publishing Sensor Data to ROS 2"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 5,
+                        "title": "Unity for Robotics Simulation",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Why Unity for Robot Simulation"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Installing Unity and Unity Robotics Hub"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Unity-ROS 2 Communication Setup"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Creating High-Fidelity 3D Environments"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Unity Physics Engine Configuration"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Importing Robot Models into Unity"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Articulation Body vs Rigid Body"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Configuring Joint Controls in Unity"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Photorealistic Rendering Techniques"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Lighting and Material Setup"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Unity ML-Agents for Robot Training"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Comparing Unity vs Gazebo Performance"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 6,
+                        "title": "Human-Robot Interaction in Simulation",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Designing Interactive Environments"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Simulating Human Models and Animations"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Collision Avoidance with Humans"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Social Navigation Principles"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Gesture Recognition in Simulation"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Proxemics and Personal Space"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Simulating Voice Commands"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Visual Feedback and Robot Expressions"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Multi-Agent Simulation"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Testing Safety Protocols in Simulation"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Measuring Interaction Quality"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Best Practices for HRI Simulation"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 7,
+                        "title": "Building Complex Simulation Scenarios",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Scenario Design Principles"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Creating Dynamic Environments"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Randomization for Robust Training"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Domain Randomization Techniques"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Procedural Environment Generation"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Multi-Robot Simulation"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Simulating Real-World Conditions"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Weather and Lighting Variations"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Adding Moving Obstacles"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Scripted Events and Triggers"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Recording and Replaying Simulations"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Performance Optimization Techniques"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "order": 3,
+                "title": "The AI-Robot Brain (NVIDIA Isaac)",
+                "description": "Advanced perception and training",
+                "chapters": [
+                    {
+                        "order": 1,
+                        "title": "Introduction to NVIDIA Isaac Platform",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Overview of NVIDIA Isaac Ecosystem"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Isaac Sim: Photorealistic Robot Simulation"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Isaac ROS: Hardware-Accelerated Perception"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Isaac SDK and Core Libraries"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Why NVIDIA for Physical AI"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Understanding Omniverse Platform"
+                            },
+                            {
+                                "order": 7,
+                                "title": "USD (Universal Scene Description) Format"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Hardware Requirements: RTX GPUs"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Installing Isaac Sim"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Licensing and Access Options"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Isaac Sim Cloud vs Local Installation"
+                            },
+                            {
+                                "order": 12,
+                                "title": "First Steps in Isaac Sim"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 2,
+                        "title": "Isaac Sim for Robot Simulation",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Isaac Sim Interface and Workflow"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Creating Environments in Isaac Sim"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Importing Robot Models"
+                            },
+                            {
+                                "order": 4,
+                                "title": "PhysX Physics Engine in Isaac"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Real-Time Ray Tracing (RTX)"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Photorealistic Material Rendering"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Advanced Lighting Techniques"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Camera Sensor Simulation"
+                            },
+                            {
+                                "order": 9,
+                                "title": "LIDAR and Depth Sensors in Isaac"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Synthetic Data Generation"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Domain Randomization in Isaac Sim"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Exporting Data for Training"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 3,
+                        "title": "Synthetic Data Generation",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Why Synthetic Data for Robotics"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Generating Labeled Training Data"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Semantic Segmentation Annotations"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Bounding Box Generation"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Depth Map Generation"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Normal Map and Material Properties"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Randomizing Object Textures"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Randomizing Lighting Conditions"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Camera Pose Variation"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Scaling Synthetic Data Generation"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Validating Synthetic Data Quality"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Combining Real and Synthetic Data"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 4,
+                        "title": "Isaac ROS: Hardware-Accelerated Perception",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Introduction to Isaac ROS"
+                            },
+                            {
+                                "order": 2,
+                                "title": "GPU-Accelerated ROS 2 Nodes"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Installing Isaac ROS on Jetson"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Installing Isaac ROS on x86 with RTX"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Understanding CUDA and TensorRT"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Isaac ROS Image Processing Pipeline"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Image Rectification and Undistortion"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Stereo Disparity Computation"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Point Cloud Generation"
+                            },
+                            {
+                                "order": 10,
+                                "title": "DNN (Deep Neural Network) Inference"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Object Detection with Isaac ROS"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Performance Benchmarking"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 5,
+                        "title": "Visual SLAM with Isaac ROS",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Introduction to Visual SLAM"
+                            },
+                            {
+                                "order": 2,
+                                "title": "VSLAM vs Traditional SLAM"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Isaac ROS Visual SLAM Package"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Camera Calibration for VSLAM"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Feature Detection and Tracking"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Map Building and Localization"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Loop Closure Detection"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Pose Graph Optimization"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Running VSLAM on Jetson Orin"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Real-Time Performance Tuning"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Handling Challenging Environments"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Integrating VSLAM with Navigation"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 6,
+                        "title": "Navigation with Nav2",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Introduction to Nav2 Stack"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Nav2 Architecture and Components"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Setting Up Nav2 for Humanoids"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Costmap Configuration"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Global and Local Costmaps"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Path Planning Algorithms"
+                            },
+                            {
+                                "order": 7,
+                                "title": "A* and Dijkstra Planners"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Local Trajectory Planning"
+                            },
+                            {
+                                "order": 9,
+                                "title": "DWB (Dynamic Window Approach)"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Obstacle Avoidance Strategies"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Recovery Behaviors"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Path Following for Bipedal Robots"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 7,
+                        "title": "Bipedal Locomotion",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Fundamentals of Bipedal Walking"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Center of Mass and Stability"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Zero Moment Point (ZMP) Theory"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Gait Generation Techniques"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Trajectory Planning for Walking"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Balance Control Strategies"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Footstep Planning"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Push Recovery Mechanisms"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Terrain Adaptation"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Stair Climbing and Uneven Surfaces"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Energy-Efficient Walking"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Implementing Bipedal Controllers in ROS 2"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 8,
+                        "title": "Sim-to-Real Transfer",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "The Reality Gap Problem"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Strategies for Sim-to-Real Transfer"
+                            },
+                            {
+                                "order": 3,
+                                "title": "System Identification"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Model Calibration Techniques"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Domain Adaptation Methods"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Transfer Learning for Robotics"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Testing in Simulation Before Deployment"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Gradual Deployment Strategies"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Safety Considerations"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Monitoring Real-World Performance"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Iterative Improvement Loop"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Case Studies: Successful Transfers"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "order": 4,
+                "title": "Vision-Language-Action (VLA)",
+                "description": "The convergence of LLMs and Robotics",
+                "chapters": [
+                    {
+                        "order": 1,
+                        "title": "Introduction to Vision-Language-Action Models",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "What are VLA Models"
+                            },
+                            {
+                                "order": 2,
+                                "title": "The Convergence of Vision, Language, and Action"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Evolution from LLMs to Embodied AI"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Key VLA Architectures"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Foundation Models for Robotics"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Multimodal Understanding"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Grounding Language in Physical Space"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Action Prediction from Language"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Advantages of VLA over Traditional Methods"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Current State-of-the-Art Models"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Challenges and Limitations"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Future Directions in VLA Research"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 2,
+                        "title": "Voice Interface with OpenAI Whisper",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Introduction to Speech Recognition for Robots"
+                            },
+                            {
+                                "order": 2,
+                                "title": "OpenAI Whisper Architecture"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Installing and Setting Up Whisper"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Audio Capture Hardware Setup"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Microphone Array Configuration"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Real-Time Audio Streaming"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Whisper Model Selection"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Running Whisper on Edge Devices"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Optimizing Whisper for Jetson"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Handling Multiple Languages"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Voice Command Recognition"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Integrating Whisper with ROS 2"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 3,
+                        "title": "Natural Language Understanding for Robotics",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "From Speech to Intent"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Natural Language Processing Basics"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Intent Classification"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Entity Recognition for Robot Commands"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Handling Ambiguity in Commands"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Context Awareness in Conversations"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Dialog State Tracking"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Clarification Questions"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Multi-Turn Interactions"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Spatial Language Understanding"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Temporal Reasoning"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Error Recovery in Dialog"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 4,
+                        "title": "LLMs for Cognitive Planning",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Introduction to LLM-Based Planning"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Using GPT Models for Robot Control"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Prompt Engineering for Robotics"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Chain-of-Thought Reasoning"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Breaking Down Complex Tasks"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Translating Language to Action Sequences"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Example: Clean the Room Task Decomposition"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Action Primitives and APIs"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Skill Libraries for Robots"
+                            },
+                            {
+                                "order": 10,
+                                "title": "LLM-Generated Code for Robot Control"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Safety Constraints in LLM Planning"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Evaluating Plan Quality"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 5,
+                        "title": "Vision-Language Integration",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Multimodal Input Processing"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Vision Transformers (ViT) Basics"
+                            },
+                            {
+                                "order": 3,
+                                "title": "CLIP: Connecting Vision and Language"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Visual Question Answering"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Object Detection from Language Queries"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Scene Understanding with VLMs"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Spatial Relationship Recognition"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Attribute Recognition (red ball, large box)"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Visual Grounding of Language"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Image Captioning for Robot Perception"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Real-Time Vision-Language Processing"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Integrating VLMs with ROS 2"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 6,
+                        "title": "Action Execution from VLA Models",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "From Predictions to Robot Actions"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Action Space Definition"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Continuous vs Discrete Actions"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Trajectory Generation from VLA Output"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Motion Planning Integration"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Grasp Generation from VLA"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Manipulation Primitives"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Navigation Goals from Language"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Combining Multiple Action Modalities"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Action Sequencing and Timing"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Feedback Loops and Corrections"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Safety Monitoring During Execution"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 7,
+                        "title": "Building the Conversational Robot",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Architecture of a Conversational Robot"
+                            },
+                            {
+                                "order": 2,
+                                "title": "Speech Synthesis for Robot Responses"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Text-to-Speech (TTS) Integration"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Natural Response Generation"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Personality and Tone in Robot Speech"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Gesture Coordination with Speech"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Eye Gaze and Attention"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Social Cues and Backchanneling"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Emotion Recognition and Response"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Adaptive Interaction Styles"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Privacy and Ethics in Conversational AI"
+                            },
+                            {
+                                "order": 12,
+                                "title": "End-to-End System Integration"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 8,
+                        "title": "Capstone Project: The Autonomous Humanoid",
+                        "topics": [
+                            {
+                                "order": 1,
+                                "title": "Project Overview and Requirements"
+                            },
+                            {
+                                "order": 2,
+                                "title": "System Architecture Design"
+                            },
+                            {
+                                "order": 3,
+                                "title": "Setting Up the Simulation Environment"
+                            },
+                            {
+                                "order": 4,
+                                "title": "Implementing Voice Command Reception with Whisper"
+                            },
+                            {
+                                "order": 5,
+                                "title": "Natural Language Processing and Intent Recognition"
+                            },
+                            {
+                                "order": 6,
+                                "title": "Path Planning and Navigation Stack Configuration"
+                            },
+                            {
+                                "order": 7,
+                                "title": "Obstacle Detection and Dynamic Avoidance"
+                            },
+                            {
+                                "order": 8,
+                                "title": "Computer Vision Pipeline for Object Identification"
+                            },
+                            {
+                                "order": 9,
+                                "title": "Grasp Planning and Manipulation Execution"
+                            },
+                            {
+                                "order": 10,
+                                "title": "Integration and Testing Workflow"
+                            },
+                            {
+                                "order": 11,
+                                "title": "Debugging and Performance Optimization"
+                            },
+                            {
+                                "order": 12,
+                                "title": "Final Demonstration and Future Enhancements"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
